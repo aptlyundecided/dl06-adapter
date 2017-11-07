@@ -13,6 +13,7 @@
 [|] || ==================== ||
 [*/
 const modbus = require('node-modbus')
+const http = require('http')
 /*]
 [|] || ======================= ||
 [|]       Client definition
