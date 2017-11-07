@@ -1,0 +1,19 @@
+{
+  "name": "dl06_adapter",
+  "version": "1.0.0",
+  "description": "adapter to collect data from the DL06 unit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "datacollection",
+    "iot"
+  ],
+  "author": "Alex Wilson",
+  "license": "ISC",
+  "devDependencies": {
+    "dateformat": "^3.0.2",
+    "socket.io-client": "^2.0.4"
+  }
+}
