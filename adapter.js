@@ -36,7 +36,7 @@ const DataGetters = stampit({
         },
         /*]
         [|] get a single memory register from the client PLC.
-        [*/ 
+        [*/
         get_register (client, location) {
             return new Promise(function (res, rej) {
                 client.readHoldingRegisters(location, 1)
@@ -51,7 +51,7 @@ const DataGetters = stampit({
         },
         /*]
         [|] get multiple memory registers from the client PLC. [No more than 100 per request for the DL06]
-        [*/ 
+        [*/
         get_registers (client, start_location, length) {
             return new Promise(function (res, rej) {
                 client.readHoldingRegisters(start_location, length)
