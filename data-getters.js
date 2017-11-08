@@ -1,9 +1,7 @@
 /*]
 [|] ||=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=||
-[|]     Component name: adapter.js
-[|]     Description:    combine several modules to create an adapter module to the DL06 PLC.
-[|]                     This adapter module has the ability to harvest data, and pre-package
-[|]                     or make recordings prior to sending it to other servers for storage & analysis.
+[|]     Component name: data-getters.js
+[|]     Description:
 [|]     Born on:        7 November 2017
 [|]     Author:         Alex Wilson
 [|] ||=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=||
@@ -70,8 +68,7 @@ const DataGetters = stampit({
 [|] MODULE DEFINITION
 [*/
 module.exports = {
-    new_DL06: stampit(DataGetters),
-    PLC: this.new_DL06()
+    DataGetters
 }
 /*]
 [|] END
